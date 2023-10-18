@@ -11,7 +11,7 @@
     <div class="page-container">
       <header data-test="header" class="page-header">
         <nav class="navigation">
-          <div>
+          <div class="navigation-menu">
             <a class="navigation-logo" href="index.html" aria-current="p">
               <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
             </a>
@@ -28,18 +28,22 @@
             </ul>
           </div>
           <ul class="list navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">Поиск</span>
-                <img src="images/search.svg" width="18" height="18" alt="Поиск">
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">Избранное</span>
-                <img src="images/heart.svg" width="18" height="18" alt="Поиск">
-              </a>
-            </li>
+            <div class="navigation-choice">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">
+                  <span class="visually-hidden">Поиск</span>
+                  <img src="images/search.svg" width="18" height="18" alt="Поиск">
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link heart" href="#">
+                  <span class="visually-hidden">Избранное</span>
+                  <img src="images/heart.svg" width="18" height="18" alt="Поиск">
+                  <span class="heart-quantity">12</span>
+                </a>
+              </li>
+            </div>
+
             <li class="navigation-item">
               <a class="navigation-link button" href="#">
                 Хочу сюда!
@@ -62,13 +66,13 @@
             <p class="description advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
           <ul class="list features-list">
-            <li class="features-item">
-              <div class="card-1">
-                <h3 class="features-title">Настоящий городок</h3>
-                <p class="features-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                <img src="images/photo-1.jpg" width="800" height="385" alt="Вид на зелёный дом или кафе с красной крышей в Седоне.">
-              </div>
-            </li>
+            <li class="features-item features-item-town">
+                <div class="town-text">
+                  <h3 class="features-title">Настоящий городок</h3>
+                  <p class="features-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <img class="features-img" src="images/photo-1.jpg" width="800" height="385" alt="Вид на зелёный дом или кафе с красной крышей в Седоне.">
+              </li>
             <li class="features-item">
               <h3 class="features-title">Небольшая площадь</h3>
               <p class="features-description">Все достопримечательности находятся очень близко</p>
@@ -81,10 +85,12 @@
               <h3 class="features-title">Мало туристов</h3>
               <p class="features-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="features-item">
-              <img src="images/photo-2.jpg" width="800" height="385" alt="Гранд Каньон.">
-              <h3 class="features-title">Там есть мост дьявола</h3>
-              <p class="features-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <li class="features-item features-item-bridge">
+              <img class="features-img" src="images/photo-2.jpg" width="800" height="385" alt="Гранд Каньон.">
+              <div class="bridge-text">
+                <h3 class="features-title">Там есть мост дьявола</h3>
+                <p class="features-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
             </li>
           </ul>
         </section>
