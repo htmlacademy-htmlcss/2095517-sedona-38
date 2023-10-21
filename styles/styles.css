@@ -26,6 +26,7 @@ html {
 
 body {
   margin: 0;
+  display: flex;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -78,6 +79,11 @@ body {
   margin-bottom: -6px;
   position: relative;
   z-index: 2;
+}
+
+.page-header-logo {
+  object-fit: contain;
+  max-width: 100%;
 }
 
 .list {
@@ -213,6 +219,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 400px;
+  min-height: 385px;
 }
 
 .features-item:nth-of-type(3) {
@@ -233,6 +241,8 @@ body {
   background-color: #82b3d3;
   color: #ffffff;
   padding: 0;
+  width: 100%;
+
 }
 
 .town-text, .bridge-text {
@@ -255,6 +265,7 @@ body {
 .features-img {
   object-fit: cover;
   height: 100%;
+  max-width: 100%;
 }
 
 .service-header {
@@ -367,13 +378,19 @@ body {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+}
 
+.social-item {
+  width: 48px;
+  height: 40px;
 }
 
 .social-link {
-  padding: 0 10px;
+  display: block;
+  padding: 10px;
 }
 
 .page-footer-phone-link {
@@ -401,6 +418,8 @@ body {
 }
 
 .filter-breadcrumbs {
+  display: flex;
+  gap: 10px;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -411,11 +430,13 @@ body {
 
 .filter-catalog {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .filter-left, .filter-right {
   display: flex;
+  flex-wrap: wrap;
   gap: 70px;
 }
 
@@ -559,15 +580,14 @@ body {
 }
 
 .button-catalog {
-  padding: 14px 12px;
+  display: block;
+  text-align: center;
+  padding: 12px 12px;
   text-decoration: none;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
   width: 48px;
   height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .button-catalog-card {
@@ -578,8 +598,8 @@ body {
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
 }
 
@@ -602,6 +622,12 @@ body {
   gap: 16px;
 }
 
+.catalog-card-image {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
 .catalog-card-title {
   color: #000000;
   font-size: 24px;
@@ -613,6 +639,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 
 .catalog-card-room {
