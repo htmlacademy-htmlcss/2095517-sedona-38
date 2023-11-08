@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <div class="page-container">
@@ -16,40 +18,36 @@
               <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
             </a>
             <ul class="list navigation-list">
-              <li class="navigation-item">
+              <li class="navigation-item navigation-item-main">
                 <a class="navigation-link" href="index.html" >Главная</a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">О Седоне</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="catalog.html">Гостиницы</a>
+                <a class="navigation-link navigation-link-catalog" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
           </div>
-          <ul class="list navigation-list navigation-user">
-            <div class="navigation-choice">
+
+          <div class="navigation-wrapper">
+            <ul class="list navigation-list navigation-user">
               <li class="navigation-item">
                 <a class="navigation-link" href="#">
                   <span class="visually-hidden">Поиск</span>
-                  <img src="images/search.svg" width="18" height="18" alt="Поиск">
+                  <img src="images/search.svg" width="18" height="18" alt="Поиск.">
                 </a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link heart" href="#">
                   <span class="visually-hidden">Избранное</span>
-                  <img src="images/heart.svg" width="18" height="18" alt="Поиск">
+                  <img src="images/heart.svg" width="18" height="18" alt="Избранное.">
                   <span class="heart-quantity">12</span>
                 </a>
               </li>
-            </div>
-
-            <li class="navigation-item">
-              <a class="navigation-link button" href="#">
-                Хочу сюда!
-              </a>
-            </li>
-          </ul>
+            </ul>
+            <a class="button" href="#">Хочу сюда!</a>
+          </div>
         </nav>
       </header>
 
@@ -58,11 +56,9 @@
           <h1 class="filter-title">Гостиницы Седоны</h1>
           <div class="filter-breadcrumbs">
               <a class="breadcrumbs-item" href="index.html">
-                <img src="images/home.svg" width="13" height="13" alt="На главную">
+                <img src="images/home.svg" width="13" height="13" alt="На главную.">
               </a>
-              <a class="breadcrumbs-item" href="сatalog.html">
-                Гостиницы
-              </a>
+              <a class="breadcrumbs-item" href="сatalog.html">Гостиницы</a>
           </div>
 
           <form class="filter-catalog" action="https://echo.htmlacademy.ru" method="get">
@@ -86,7 +82,7 @@
               </fieldset>
 
               <fieldset class="filter-item filter-housing">
-                <legend class="filter-heading filter-housing-title">Тип жилья:</legend>
+                <legend class="filter-heading filter-housing-title">Тип Жилья:</legend>
                 <ul class="filter-housing-list list control-list">
                   <li class="control-item">
                     <input class="control-input" id="hotel" name="hotel-group" type="radio" value="hotel" checked>
@@ -119,10 +115,10 @@
                 </div>
                 <div class="range-scale">
                   <div class="range-bar">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену</span>
                     </button>
                   </div>
@@ -142,7 +138,7 @@
             <h2 class="catalog-title">Найдено гостиниц: <span>38</span></h2>
             <div class="catalog-sorting">
               <select class="catalog-select" aria-label="Сортировка">
-                <option value="cheap">Сначала дешёвое</option>
+                <option value="cheap">Сначала дешёвые</option>
                 <option value="expensive">Сначала дорогое</option>
                 <option value="popular">Сначала популярное</option>
               </select>
@@ -150,15 +146,15 @@
               <div class="catalog-mode">
                 <a class="button-catalog button-catalog-card" href="#">
                   <span class="visually-hidden">Показать карточки</span>
-                  <img src="images/mode-1.svg" width="16" height="14" alt="Показать карточки">
+                  <img src="images/mode-1.svg" width="16" height="14" alt="Показать карточки.">
                 </a>
                 <a class="button-catalog button-catalog-slide" href="#">
                   <span class="visually-hidden">Показать слайдом</span>
-                  <img src="images/mode-2.svg" width="16" height="14" alt="Показать слайдом">
+                  <img src="images/mode-2.svg" width="16" height="14" alt="Показать слайдом.">
                 </a>
                 <a class="button-catalog button-catalog-list" href="#">
                   <span class="visually-hidden">Показать список</span>
-                  <img src="images/mode-3.svg" width="16" height="14" alt="Показать список">
+                  <img src="images/mode-3.svg" width="16" height="14" alt="Показать список.">
                 </a>
               </div>
             </div>
@@ -167,7 +163,7 @@
           <ul class="list catalog-list">
             <li class="catalog-card">
               <a class="catalog-card-link" href="#" tabindex="-1">
-                <img class="catalog-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
+                <img class="catalog-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="">
                 <h3 class="catalog-card-title">Amara Resort & Spa</h3>
               </a>
               <div class="catalog-card-cost">
@@ -188,7 +184,7 @@
 
             <li class="catalog-card">
               <a class="catalog-card-link" href="#" tabindex="-1">
-                <img class="catalog-card-image" src="images/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
+                <img class="catalog-card-image" src="images/hotel-2.jpg" width="300" height="212" alt="">
                 <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
               </a>
               <div class="catalog-card-cost">
@@ -209,7 +205,7 @@
 
             <li class="catalog-card">
               <a class="catalog-card-link" href="#" tabindex="-1">
-                <img class="catalog-card-image" src="images/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
+                <img class="catalog-card-image" src="images/hotel-3.jpg" width="300" height="212" alt="">
                 <h3 class="catalog-card-title">Desert Quail Inn</h3>
               </a>
               <div class="catalog-card-cost">
@@ -230,7 +226,7 @@
 
             <li class="catalog-card">
               <a class="catalog-card-link" href="#" tabindex="-1">
-                <img class="catalog-card-image" src="images/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
+                <img class="catalog-card-image" src="images/hotel-4.jpg" width="300" height="212" alt="">
                 <h3 class="catalog-card-title">GreenTree Inn</h3>
               </a>
               <div class="catalog-card-cost">
