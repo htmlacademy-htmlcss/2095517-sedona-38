@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="page-container">
-      <div data-test="modal" class="modal-container">
+      <div class="modal-container">
         <div class="modal">
           <div class="modal-wrapper">
             <button class="modal-close-button">
@@ -38,23 +38,26 @@
               <ul class="list modal-quantity">
                 <li class="quantity-item">
                   <label class="quantity-label" for="adults">Взрослые:</label>
-                  <button class="quantity-button quantity-button-minus" type="button">
-                    <span class="visually-hidden">Уменьшить количество взрослых</span>
-                    <svg class="quantity-button-icons" xmlns="http://www.w3.org/2000/svg" width="14" height="2" role="img" aria-label="Уменьшить" viewBox="0 0 14 2" fill="none">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-                    </svg>
-                  </button>
+                  <div class="button-minus-wrapper">
+                    <button class="quantity-button" type="button">
+                      <span class="visually-hidden">Уменьшить количество взрослых</span>
+                      <svg class="quantity-button-icons" xmlns="http://www.w3.org/2000/svg" width="14" height="14" role="img" aria-label="Уменьшить" viewBox="0 0 14 2" fill="currentColor">
+                        <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                      </svg>
+                    </button>
+                  </div>
                   <input class="quantity-input" type="number" id="adults" name="adults" value="2" max="2" required>
-                  <button class="quantity-button quantity-button-plus" type="button">
-                    <span class="visually-hidden">Увеличить количество взрослых</span>
-                    <svg class="quantity-button-icons" xmlns="http://www.w3.org/2000/svg" width="14" height="14" role="img" aria-label="Увеличить" viewBox="0 0 14 14" fill="none">
-                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
-                    </svg>
-                  </button>
+                  <div class="button-plus-wrapper">
+                    <button class="quantity-button" type="button">
+                      <span class="visually-hidden">Увеличить количество взрослых</span>
+                      <svg class="quantity-button-icons" xmlns="http://www.w3.org/2000/svg" width="14" height="14" role="img" aria-label="Увеличить" viewBox="0 0 14 14" fill="currentColor">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                      </svg>
+                    </button>
+                  </div>
                 </li>
 
                 <li class="quantity-item">
-
                   <div class="tooltip-wrapper">
                     <label class="quantity-label" for="children">Дети:</label>
                     <span class="tooltip">
@@ -67,20 +70,23 @@
                       <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                     </span>
                   </div>
-
-                  <button class="quantity-button quantity-button-minus" type="button">
-                    <span class="visually-hidden">Уменьшить количество детей</span>
-                    <svg class="quantity-button-icons" xmlns="http://www.w3.org/2000/svg" width="14" height="2" role="img" aria-label="Уменьшить" viewBox="0 0 14 2" fill="none">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-                      </svg>
-                  </button>
+                  <div class="button-minus-wrapper">
+                    <button class="quantity-button" type="button">
+                      <span class="visually-hidden">Уменьшить количество детей</span>
+                      <svg class="quantity-button-icons" xmlns="http://www.w3.org/2000/svg" width="14" height="14" role="img" aria-label="Уменьшить" viewBox="0 0 14 2" fill="currentColor">
+                        <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                        </svg>
+                    </button>
+                  </div>
                   <input class="quantity-input" type="number" id="children" name="children" value="2" max="2">
-                  <button class="quantity-button quantity-button-plus" type="button">
-                    <span class="visually-hidden">Увеличить количество детей</span>
-                    <svg class="quantity-button-icons" xmlns="http://www.w3.org/2000/svg" width="14" height="14" role="img" aria-label="Увеличить" viewBox="0 0 14 14" fill="none">
-                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
-                    </svg>
-                  </button>
+                  <div class="button-plus-wrapper">
+                    <button class="quantity-button" type="button">
+                      <span class="visually-hidden">Увеличить количество детей</span>
+                      <svg class="quantity-button-icons" xmlns="http://www.w3.org/2000/svg" width="14" height="14" role="img" aria-label="Увеличить" viewBox="0 0 14 14" fill="currentColor">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                      </svg>
+                    </button>
+                  </div>
                 </li>
               </ul>
               <button class="button button-modal" type="submit">Найти</button>
