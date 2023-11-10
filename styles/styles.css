@@ -622,7 +622,7 @@ body {
   width: 717px;
   margin: auto;
   margin-top: 25vh;
-  padding: 63px 69px;
+  padding: 66px 70px;
 
   background-color: #ffffff;
   border-radius: 30px;
@@ -652,7 +652,7 @@ body {
 
 .modal-close-button:hover,
 .modal-close-button:focus {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .modal-close-button:active {
@@ -697,7 +697,7 @@ body {
   max-width: 119px;
   margin-right: 24px;
 
-  color: #000;
+  color: #000000;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -716,15 +716,15 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  color: #000;
+  color: #000000;
 
   border: none;
   border-radius: 4px;
-  background: #F2F2F2;
+  background: #f2f2f2;
 
   background-image: url("../images/date.svg");
   background-repeat: no-repeat;
-  background-position: center right 22px;
+  background-position: center right 20px;
   background-size: 20px 20px;
 }
 
@@ -739,7 +739,7 @@ body {
 }
 
 .modal-error {
-  color: #FF5757;
+  color: #ff5757;
 }
 
 .modal-quantity {
@@ -766,20 +766,38 @@ body {
   color: #000000;
 }
 
-.quantity-button {
+.button-minus-wrapper,
+.button-plus-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 34px;
   height: 48px;
 
-  background: #F2F2F2;
+  background: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+}
+
+.button-plus-wrapper {
+  border-radius: 0 4px 4px 0;
+}
+
+.quantity-button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  color: rgba(117, 97, 87, 0.3);
   border: none;
   cursor: pointer;
 }
 
-.quantity-button-minus {
-  border-radius: 4px 0 0 4px;
+.quantity-button-icons:hover {
+  fill: #000000;
+}
+
+.quantity-button-icons:active {
+  opacity: 0.2;
 }
 
 .quantity-input {
@@ -795,7 +813,7 @@ body {
   line-height: 20px;
   color: #000000;
 
-  background: #F2F2F2;
+  background: #f2f2f2;
   border: none;
 }
 
@@ -807,18 +825,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 input[type=number]{
   -moz-appearance: textfield;
-}
-
-.quantity-button-plus {
-  border-radius: 0 4px 4px 0;
-}
-
-.quantity-button-icons:hover {
-  fill: #000000;
-}
-
-.quantity-button:active {
-  opacity: 0.2;
 }
 
 .tooltip {
@@ -848,7 +854,7 @@ input[type=number]{
 .tooltip-icon {
   width: 26px;
   height: 26px;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   border-radius: 13px;
 }
 
@@ -904,7 +910,7 @@ input[type=number]{
 }
 
 .button-modal:hover, .button-modal:focus {
-  background: #68a2Ca;
+  background: #68a2ca;
 }
 
 .button-modal:active {
