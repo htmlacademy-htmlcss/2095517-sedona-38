@@ -63,6 +63,7 @@ body {
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 70px;
   justify-content: space-between;
   align-items: center;
@@ -227,7 +228,7 @@ body {
   color: #ffffff;
 
   border-radius: 10px;
-  background: #7dB54f;
+  background: #7db54f;
 }
 
 .hero {
@@ -247,7 +248,7 @@ body {
   bottom: 0;
   width: 1200px;
   height: 57px;
-  background-image: url("../images/vector.svg");
+  background-image: url("../images/hero-background.svg");
   background-size: cover;
   background-position: bottom;
 }
@@ -571,8 +572,8 @@ body {
 
 .page-footer-phone {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  width: 350px;
 }
 
 .page-footer-phone-link {
@@ -610,7 +611,7 @@ body {
   top: 0;
   left: 0;
 
-  display: none;
+  /* display: none; */
   width: 100%;
   height: 100%;
 
@@ -788,6 +789,7 @@ body {
   padding: 0;
 
   color: rgba(117, 97, 87, 0.3);
+  background: none;
   border: none;
   cursor: pointer;
 }
@@ -817,13 +819,13 @@ body {
   border: none;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type=number]{
+.quantity-input {
   -moz-appearance: textfield;
 }
 
@@ -903,7 +905,9 @@ input[type=number]{
 }
 
 .button-modal {
-  padding: 20px 77px;
+  padding: 18px 77px;
+  font-size: 20px;
+  line-height: 24px;
   border: none;
   border-radius: 10px;
   background: #83b3d3;
@@ -1000,6 +1004,7 @@ input[type=number]{
   display: flex;
   flex-wrap: wrap;
   gap: 70px;
+  max-width: 550px;
   margin-bottom: 20px;
 }
 
@@ -1124,7 +1129,8 @@ input[type=number]{
 
 .limit-cost {
   position: absolute;
-  top: 12px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 20px;
 
   font-size: 18px;
@@ -1135,7 +1141,7 @@ input[type=number]{
 
 .cost-text {
   width: 143px;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
 
   font-family: inherit;
   color: #000000;
@@ -1300,7 +1306,8 @@ input[type=number]{
   font-weight: 400;
   line-height: 21px;
 
-  background-image: url(../images/down-arrow.svg);
+  background-color: #ffffff;
+  background-image: url("../images/down-arrow.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
   background-size: 12px 9px;
@@ -1412,8 +1419,10 @@ input[type=number]{
 
 .catalog-card-button {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
   margin-top: auto;
 }
 
@@ -1443,9 +1452,11 @@ input[type=number]{
 
 .catalog-card-estimation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-}
+  gap: 10px;
+  }
 
 .start {
   width: 18px;
