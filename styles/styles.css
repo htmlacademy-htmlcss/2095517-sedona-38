@@ -98,13 +98,11 @@ body {
   max-width: 550px;
   margin: 0;
   padding: 0;
-
 }
 
 .navigation-item {
   position: relative;
 }
-
 
 .navigation-link {
   display: block;
@@ -996,7 +994,13 @@ body {
 }
 
 .breadcrumbs-item:first-child {
+  min-width: 13px;
+  min-height: 13px;
   padding: 0;
+
+  background-image: url("../images/home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .breadcrumbs-item:first-child:hover {
